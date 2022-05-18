@@ -1,0 +1,17 @@
+body {
+    background-color:#F7F9F7;
+    color:#560A69;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#main_head {
+    text-align:center;
+}
+
+#student_description {
+    text-align:center;
+}
+
+#nav {
+    color:#3E6990;
+}
