@@ -1,5 +1,32 @@
+a:link {
+    text-decoration: none;
+    color:#F7F9F7;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color:#F7F9F7;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color:#F7F9F7;
+  }
+  
+  a:active {
+    text-decoration: none;
+    color:#F7F9F7;
+  }
+  
 body {
+    background-image:url("Pictures/Earth.gif");
+    background-position: center;
     background-color:#F7F9F7;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height:100vh;
+    width:100%;
     color:#560A69;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -12,6 +39,37 @@ body {
     text-align:center;
 }
 
-#nav {
-    color:#3E6990;
+.nav {
+    background-color:#3E6990;
+    color:#F7F9F7;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left:2rem;
+    padding-right:2rem;
+    align-items:center;
+    position:sticky;
+    margin-top: -15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.name {
+    font-size: 150%;
+    padding-right:0.75rem;
+    padding-left:0.75rem;
+}
+
+.nav ul li {
+    font-size: 120%;
+    padding-right:2rem;
+    padding-left:2rem;
+    display:inline-block;
+    list-style:none;
+}
+
+#content {
+    width:1000px;
+    margin:auto;
 }
