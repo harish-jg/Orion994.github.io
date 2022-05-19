@@ -10,28 +10,43 @@ a:link {
   
   a:hover {
     text-decoration: none;
-    color:#D3C1D2;
+    color:#D3FFE9;
   }
   
   a:active {
     text-decoration: none;
-    color:#D3C1D2;
+    color:#D3FFE9;
   }
   
 body {
     background-image:url("Pictures/Earth.gif");
-    background-position: center;
-    background-color:#F7F9F7;
+    background-color: #2F004F;
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     width:100%;
-    color:#560A69;
+    color:#F7F9F7;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #main_head {
     text-align:center;
+    height:100px;
+    font-size: 150px;
+}
+
+#top {
+    background-color: #6A6262;
+    align-items: center;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#content {
+    max-width:1000px;
+    margin:auto;
+    font-size: 25px;
+    padding-bottom:2rem;
 }
 
 #student_description {
@@ -39,7 +54,7 @@ body {
 }
 
 .nav {
-    background-color:#560A69;
+    background-color:#6A6262;
     color:#F7F9F7;
     padding-top: 1.5rem;
     padding-bottom: 1rem;
@@ -68,11 +83,6 @@ body {
     list-style:none;
 }
 
-#content {
-    max-width:1000px;
-    margin:auto;
-}
-
 .contact_links {
     text-align: center;
     width:100%;
@@ -92,6 +102,6 @@ body {
 .card__img {
     object-fit: cover;
     width:50%;
-    border: 5px solid #560A69;
+    border: 5px solid #6A6262;
   }
 
