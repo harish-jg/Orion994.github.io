@@ -20,7 +20,7 @@ a:link {
   
 
 #top_background {
-    background-image: url("../Pictures/Earth.gif");
+    background-image: url("Pictures/Earth.gif");
 }
 
 body {
@@ -78,6 +78,10 @@ body {
     display:flex;
     z-index: 1;
     justify-content: space-between;
+}
+
+#nav_list {
+    padding-right: 2rem;
 }
 
 .name {
