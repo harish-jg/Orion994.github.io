@@ -20,10 +20,21 @@ a:link {
   
 
 #top_background {
-    background-image: url("Pictures/Earth.gif");
+    background-image: url("../Pictures/Earth.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width:105%;
+    height:700px;
+    background-position: center center;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    transform:translateY(70px);
 }
 
 body {
+    overflow-x: hidden;
     background-image:url("Pictures/Earth.gif");
     background-color: #F7F9F7;
     background-size:cover;
@@ -36,7 +47,6 @@ body {
 
 #main_head {
     text-align:center;
-    height:fit-content;
     font-size: 150px;
 }
 
@@ -61,23 +71,22 @@ body {
 }
 
 .nav {
+    overflow-x: hidden;
     background-color:#2F004F;
     color:#F7F9F7;
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
     padding-left:2rem;
     padding-right:2rem;
     align-items:center;
     position:fixed;
     top:0;
     width:100%;
-    margin-top: -15px;
+    height:80px;
     margin-left: -15px;
     margin-right: -15px;
-    margin-bottom: 0;
     display:flex;
     z-index: 1;
     justify-content: space-between;
+    margin-bottom: 0;
 }
 
 #nav_list {
@@ -126,7 +135,7 @@ body {
   }
 
 .inline-photo {
-    margin-top: 2rem;
+    padding-bottom: 3rem;
     padding-right: 1rem;
     padding-left: 1rem;
     width: 50%;
@@ -146,6 +155,9 @@ body {
     font-size: 70px;
     text-align: center;
     padding-top: 2rem;
+    padding-bottom: -2rem;
+    letter-spacing: 10px;
+    height: fit-content;
 }
 
 #current_projects{
@@ -153,4 +165,45 @@ body {
     margin-left: -15px;
     margin-right: -15px;
     padding-bottom:3rem;
+    font-size: 25px;
+    padding-left: 10rem;
+    padding-right: 20rem;
+    text-align: center;
+    list-style: inside;
+    display:flex;
+    justify-content: space-between;
+    padding-top: 5rem;
+    align-items:center;
+}
+
+#projects_list {
+    padding-top:2rem;
+    max-width: 1000px;
+    display: table;
+    align-items: center;
+    text-align: center;
+    list-style: inside;
+}
+
+.list_title {
+    font-size: 35px;
+    list-style: none;
+    padding-bottom: 0.75rem;
+}
+
+#experience {
+    float:left;
+    color: #2F004F;
+    padding-left: 5rem;
+    width:40%;
+}
+
+#experience_htext {
+    font-size: 70px;
+    letter-spacing: 10px;
+}
+
+.elist_title {
+    font-size: 35px;
+    padding-bottom: 0.75rem;
 }
