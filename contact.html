@@ -12,28 +12,41 @@
         rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     </head>
     <body>
-        <div class="nav">
-            <span class="name">Harish Jai Ganesh</span>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a class="active" href="contact.html">Contact</a></li>
-                </ul>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-static-top" 
+        style="box-shadow: 0 2px 2px -2px rgba(0,0,0,.2); position: sticky; width:100%; top:0"
+        >
+            <div class="container-fluid">
+              <a class="navbar-brand" style="font-size: 25px;" href="#">Harish Jai Ganesh</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+              aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size:18px;">
+                  <li class="nav-item" style="padding-left: 1rem;">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item" style="padding-left: 1rem;">
+                    <a class="nav-link active" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item" style="padding-left: 1rem;">
+                    <a class="nav-link" href="gallery.html">Resume</a>
+                  </li>
+              </div>
+            </div>
+        </nav>
         <section class="contact_links">
         <article class="contact" width=780px>
             <a href="https://www.linkedin.com/in/harish-jai-ganesh-784a16182/" target="_blank">
-                <img class="card__img" src="Pictures/linkedin.png">
-            </a>
-        </article>
-        <article class="contact">
-            <a href="https://www.instagram.com/harish_jai.g/" target="_blank">
-                <img class="card__img" src="Pictures/instagram.png">
+                <img class="img-fluid" src="Pictures/linkedin.png" style="margin-top: 2rem; display: block; margin-left: auto; margin-right: auto;
+                width: 50%; border: 5px solid; border-color: black;">
             </a>
         </article>
         <article class="contact">
             <a href="https://github.com/Orion994" target="_blank">
-                <img class="card__img" src="Pictures/github.png">
+                <img class="img-fluid" src="Pictures/github.png" style="margin-top: 2rem; display: block; margin-left: auto; margin-right: auto;
+                width: 50%; border: 5px solid; border-color: black;">
             </a>
         </article>
         </section>

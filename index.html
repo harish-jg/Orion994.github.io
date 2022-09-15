@@ -6,69 +6,95 @@
         <meta name="description" content="The professional website of Harish Jai Ganesh"/>
         <meta name="keywords" content="Harish, Jai Ganesh, student, engineer, aerospace, projects"/>
         <meta name="author" content="Harish Jai Ganesh"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <link rel=”stylesheet” href=”css/bootstrap.css”>
+        <link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="CSS/style.css"/>
-        <! --<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
-        rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     </head>
     <body>
-        <div class="nav">
-            <span class="name">Harish Jai Ganesh</span>
-                <ul id="nav_list">
-                    <li><a class ="active" href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-static-top" 
+        style="box-shadow: 0 2px 2px -2px rgba(0,0,0,.2); position: sticky; width:100%; top:0"
+        >
+            <div class="container-fluid">
+              <a class="navbar-brand" style="font-size: 25px;" href="#">Harish Jai Ganesh</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+              aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size:18px;">
+                  <li class="nav-item" style="padding-left: 1rem;">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item" style="padding-left: 1rem;">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item" style="padding-left: 1rem;">
+                    <a class="nav-link" href="gallery.html">Resume</a>
+                  </li>
+              </div>
+            </div>
+        </nav>
+        <div id="top_background" class="bg-image p-5 text-center shadow-1-strong" 
+            style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
+            url('Pictures/astronaut.jpeg'); width:100%; background-repeat: no-repeat; 
+            background-size: cover">
+            <div style="align-content: center;" class="row align-items-center d-flex justify-content-center">
+                    <div id="header" class="" style="font-size: 60px; margin-top:8rem; color:#ffffff">
+                    About Me
+                    </div>
+                    <div id="student_description" class="text-center" 
+                    style="width: 80%; height: auto; color: #ffffff; font-size: 30px; margin-bottom: 11rem;
+                    margin-top: 2rem;">
+                        Currently a college freshman at
+                        the University of Michigan at Ann Arbor, where 
+                        I'm studying Aerospace Engineering.
+                        I'm interested in mathematics, physics, programming,
+                        engineering, and psychology.
+                    </div>
+            </div>
         </div>
-        <div id="top_background">
-        <section id="top">
+        <section id="current_projects" style="margin-top:2rem; margin-bottom: 2rem;"
+            class="row align-items-center d-flex justify-content-center">
             <header>
-                <h1 id="main_head">
-                    Harish Jai Ganesh
-                </h1>
-            </header>
-            <section id="content">
-                <div id="student_description">
-                    Currently a college freshman at 
-                    the University of Michigan at Ann Arbor, where 
-                    I'm studying Aerospace Engineering.
-                    I'm interested in mathematics, physics, programming,
-                    engineering, and psychology.
-                </div>
-            </section>
-        </section>
-        </div>
-        <section id="current_projects">
-            <header>
-                <h2 id="project_head">
-                    Current Projects:
+                <h2 id="project_head" style="font-size: 40px;" class="row align-items-center d-flex justify-content-center">
+                    Current Projects
                 </h2>
             </header>
-            <section id="projects_list">
+            <section id="projects_list" style="width:90%; font-size:20px">
                 <ul id="my_list">
                     <div id="list">
-                    <li class="list_title">Web Development</li>
+                    <li id="list_title" class="list_title">Web Development</li>
                     <div class="description">This website is part of my push to learning some essential programming languages. 
                         After starting with HTML, CSS, and JavaScript, I plan to continue working on my fluency in Python and Java, 
-                        implementing those languages into future projects that I undertake.
+                        implementing those languages into future projects that I undertake. I'll be learning MATLAB this year, 
+                        as well as C/C++ and some Assembly language.
                     </div>
+                    <!--
                     <br>
                     <li class="list_title">projectOrion</li>
                     <div class="description">After finishing my college applications, I was left with plenty of free time, and I decided
                         to start working with different types of media. projectOrion encompasses writing, filming, and photography. This
                         project is when I started also working with DaVinci Resolve.
                     </div>
+                    -->
                     <br>
-                    <li class="list_title">MASA</li>
+                    <li id="list_title" class="list_title">MASA</li>
                     <div class="description">MASA is a student-led club at the University of Michigan with the aim of building a
                         liquid-bipropellant rocket engine that will eventually take UofM to space. With my inital year at this club,
-                        I'm hoping to learn a lot about ATLO (Assembly, Testing, and Launch Operations), as well as propulsion.
+                        I'll be working on propulsion, specifically combustion chamber or valves. This will provide a lot of 
+                        experience in CAD, machining, and hands-on engineering work, all of which I hope to use for an 
+                        engineering internship in the summer of 2023.
                     </div>
                     <br>
                     </div>
                 </ul>
             </section>
         </section>
+        <!--
         <div class="row-cols-2">
             <section id="my picture">
                 <img src="Pictures/prof.jpeg" style="float:right" class="inline-photo show-on-scroll">
@@ -87,6 +113,7 @@
                 </section>
             </section>
         </div>
+        -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
