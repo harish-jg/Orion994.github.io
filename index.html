@@ -15,7 +15,7 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light navbar-static-top" 
-        style="box-shadow: 0 2px 2px -2px rgba(0,0,0,.2); position: sticky; width:100%; top:0"
+        style="box-shadow: 0 2px 2px -2px rgba(0,0,0,.2); position: sticky; width:100%; top:0; background-color: rgb(234, 234, 234)"
         >
             <div class="container-fluid">
               <a class="navbar-brand active" style="font-size: 25px;" href="#">Harish Jai Ganesh</a>
@@ -57,42 +57,47 @@
                     </div>
             </div>
         </div>
-        <section id="current_projects" style="margin-top:2rem; margin-bottom: 2rem;"
-            class="row align-items-center d-flex justify-content-center">
-            <header>
-                <h2 id="project_head" style="font-size: 40px;" class="row align-items-center d-flex justify-content-center">
-                    Current Projects
-                </h2>
-            </header>
-            <section id="projects_list" style="width:90%; font-size:20px">
-                <ul id="my_list">
-                    <div id="list">
-                    <li id="list_title" class="list_title">Web Development</li>
-                    <div class="description">This website is part of my push to learning some essential programming languages. 
-                        After starting with HTML, CSS, and JavaScript, I plan to continue working on my fluency in Python and Java, 
-                        implementing those languages into future projects that I undertake. I'll be learning MATLAB this year, 
-                        as well as C/C++ and some Assembly language.
-                    </div>
-                    <!--
-                    <br>
-                    <li class="list_title">projectOrion</li>
-                    <div class="description">After finishing my college applications, I was left with plenty of free time, and I decided
-                        to start working with different types of media. projectOrion encompasses writing, filming, and photography. This
-                        project is when I started also working with DaVinci Resolve.
-                    </div>
-                    -->
-                    <br>
-                    <li id="list_title" class="list_title">MASA</li>
-                    <div class="description">MASA is a student-led club at the University of Michigan with the aim of building a
-                        liquid-bipropellant rocket engine that will eventually take UofM to space. With my inital year at this club,
-                        I'll be working on propulsion, specifically combustion chamber or valves. This will provide a lot of 
-                        experience in CAD, machining, and hands-on engineering work, all of which I hope to use for an 
-                        engineering internship in the summer of 2023.
-                    </div>
-                    <br>
-                    </div>
-                </ul>
-            </section>
+        <section id="current_projects" 
+            style="padding-top:2rem; padding-bottom: 2rem; background-color: black;"
+            class="">
+            <div id="jumbotron" class="row align-items-center d-flex justify-content-center" 
+            style="background-color: rgb(234, 234, 234); margin-left: 1rem; margin-right: 1rem; border-radius: 5px;">
+                <header>
+                    <h2 id="project_head" style="font-size: 40px; padding-top: 2rem;" 
+                    class="row align-items-center d-flex justify-content-center">
+                        Current Projects
+                    </h2>
+                </header>
+                <section id="projects_list" style="width:90%; font-size:20px">
+                    <ul id="my_list">
+                        <div id="list">
+                        <li id="list_title" class="list_title">Web Development</li>
+                        <div class="description">This website is part of my push to learning some essential programming languages. 
+                            After starting with HTML, CSS, and JavaScript, I plan to continue working on my fluency in Python and Java, 
+                            implementing those languages into future projects that I undertake. I'll be learning MATLAB this year, 
+                            as well as C/C++ and some Assembly language.
+                        </div>
+                        <!--
+                        <br>
+                        <li class="list_title">projectOrion</li>
+                        <div class="description">After finishing my college applications, I was left with plenty of free time, and I decided
+                            to start working with different types of media. projectOrion encompasses writing, filming, and photography. This
+                            project is when I started also working with DaVinci Resolve.
+                        </div>
+                        -->
+                        <br>
+                        <li id="list_title" class="list_title">MASA</li>
+                        <div class="description">MASA is a student-led club at the University of Michigan with the aim of building a
+                            liquid-bipropellant rocket engine that will eventually take UofM to space. With my inital year at this club,
+                            I'll be working on propulsion, specifically combustion chamber or valves. This will provide a lot of 
+                            experience in CAD, machining, and hands-on engineering work, all of which I hope to use for an 
+                            engineering internship in the summer of 2023.
+                        </div>
+                        <br>
+                        </div>
+                    </ul>
+                </section>
+            </div>
         </section>
         <div id="main_section" style="display:flex; justify-content:space-between; background-color: black;">
             <section id="current_projects" style="margin-top:2rem; margin-bottom:2rem; color:#ffffff"
@@ -127,9 +132,14 @@
                 </section>
             </section>
             <section id="my picture">
-                <img src="Pictures/prof.jpeg" style="float:right; max-height:100vh" class="inline-photo show-on-scroll">
+                <img src="Pictures/prof.jpeg" style="float:right; max-height:100vh; border-radius: 5px; 
+                margin-right: 1rem; margin-left: 1rem; margin-top:1rem; margin-bottom: 1rem;" 
+                class="inline-photo show-on-scroll">
             </section>
             <script src="JavaScript/show-on-scroll.js"></script>
+        </div>
+        <div id="bottom" style="padding-top:50px; background-color: black;">
+
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
