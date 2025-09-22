@@ -1,3 +1,11 @@
+/* Show PDF on desktop, image on mobile */
+.portfolio-pdf { display: block; }
+.portfolio-img { display: none; }
+
+@media (max-width: 768px) {
+    .portfolio-pdf { display: none; }
+    .portfolio-img { display: block; }
+}
 html * {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
