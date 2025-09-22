@@ -1,6 +1,7 @@
 /* Ensure content starts below navbar and is padded */
+
 .portfolio-pdf, .portfolio-img {
-    padding-top: 90px;
+    padding-top: 120px;
 }
 
 @media (max-width: 768px) {
