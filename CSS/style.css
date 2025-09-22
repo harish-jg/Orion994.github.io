@@ -1,3 +1,13 @@
+/* Ensure content starts below navbar and is padded */
+.portfolio-pdf, .portfolio-img {
+    padding-top: 90px;
+}
+
+@media (max-width: 768px) {
+    .portfolio-pdf, .portfolio-img {
+        padding-top: 70px;
+    }
+}
 /* Show PDF on desktop, image on mobile */
 .portfolio-pdf { display: block; }
 .portfolio-img { display: none; }
