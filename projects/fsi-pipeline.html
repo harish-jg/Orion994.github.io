@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" href="../favicon.ico">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Automotive Hood FSI Pipeline — Harish Jai Ganesh</title>
@@ -39,32 +40,40 @@
 
       <div class="proj-section">
         <h3>Overview</h3>
-        <p>Built a coupled fluid–structure interaction pipeline to model aerodynamic-induced stamping defects across 16,000+ automotive hood geometry variants for Ford Motor Company. The pipeline generates large-scale simulation datasets for downstream machine learning models that predict surface defect likelihood directly from manufacturing geometry. Co-authored paper accepted to NeurIPS 2025.</p>
+        <p>Built a coupled fluid–structure interaction pipeline to model fluid-induced mechanical defects across 16,000+ representative automotive hood geometry variants for Ford Motor Company. 
+          The pipeline generates large-scale simulation datasets for downstream machine learning models that predict surface defect likelihood directly from manufacturing geometry. 
+          Co-authored paper accepted to NeurIPS 2025.</p>
       </div>
 
       <div class="proj-section">
         <h3>Approach & methodology</h3>
-        <p>Custom solver modifications to OpenFOAM's pimpleFoam (fluid) and solidDisplacementFoam (structural) enabled bidirectional field coupling via preCICE middleware. Projection mapping was implemented for data transfer between non-conforming fluid and structural meshes at the shared interface boundary.</p>
-        <p>The complete STL-to-displacement-field pipeline was automated on HPC infrastructure via SLURM job scripts. Mesh cell count and time-domain parameters were optimized to reduce total CPU runtime while preserving solution accuracy. Python post-processing scripts parsed solver output into structured tensors suitable for ML training ingestion.</p>
+        <p>Custom solver modifications to OpenFOAM's pimpleFoam (fluid) and solidDisplacementFoam (structural) enabled bidirectional field coupling via preCICE middleware. 
+          Projection mapping was implemented for data transfer between non-conforming fluid and structural meshes at the shared interface boundary.</p>
+        <p>The complete STL-to-displacement-field pipeline was automated on HPC infrastructure via SLURM job scripts. 
+          Mesh cell count and time-domain parameters were optimized to reduce total CPU runtime while preserving solution accuracy. 
+          Python post-processing scripts parsed solver output into data suitable for ML training ingestion.</p>
       </div>
 
       <div class="proj-section">
         <h3>Tools & techniques</h3>
-        <p>OpenFOAM (pimpleFoam, solidDisplacementFoam), preCICE coupling library, SLURM workload manager, Python (NumPy, mesh I/O, data pipeline), STL geometry processing, HPC cluster environment, projection mapping for field transfer across non-conforming meshes.</p>
+        <p>OpenFOAM (pimpleFoam, solidDisplacementFoam), preCICE coupling library, SLURM workload manager, Python, STL geometry processing, 
+          HPC cluster environment, projection mapping for field transfer across non-conforming meshes.</p>
       </div>
 
       <div class="proj-section">
         <h3>Outcomes & results</h3>
-        <p>Delivered a fully automated pipeline capable of processing 16,000+ hood geometry variants end-to-end without manual intervention. Cell count and time-domain optimizations reduced total CPU runtime significantly per variant. Simulation outputs were packaged as structured ML-ready training data. Work contributed to a paper accepted at NeurIPS 2025.</p>
+        <p>Delivered a fully automated pipeline capable of processing 16,000+ hood geometry variants end-to-end without manual intervention. 
+          Cell count and time-domain optimizations reduced total CPU runtime significantly per variant. 
+          Simulation outputs were packaged as structured ML-ready training data. Work contributed to a paper accepted at NeurIPS 2025.</p>
       </div>
 
       <div class="proj-section proj-section--full">
         <h3>Images</h3>
         <div class="proj-image-grid">
-          <div class="proj-image-placeholder" data-label="OpenFOAM mesh — fluid domain (750K cells)"></div>
-          <div class="proj-image-placeholder" data-label="preCICE coupling diagram"></div>
-          <div class="proj-image-placeholder" data-label="Hood STL to displacement field pipeline"></div>
-          <div class="proj-image-placeholder" data-label="Pressure and displacement field outputs"></div>
+          <img src="../Pictures/sim_setup.png" alt="OpenFOAM simulation setup" class="proj-image" />
+          <img src="../Pictures/workflow_cfd.png" alt="preCICE coupling diagram" class="proj-image" />
+          <img src="../Pictures/stl_to_displacement.png" alt="Hood STL to displacement field pipeline" class="proj-image" />
+          <img src="../Pictures/solutions.png" alt="Pressure and displacement field outputs" class="proj-image" />
         </div>
       </div>
 
