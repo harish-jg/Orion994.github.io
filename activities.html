@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Activities — Harish Jai Ganesh</title>
+  <meta name="description" content="Powerlifting, hiking, solo travel, and photography." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Syne:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="site-nav">
+    <a href="index.html" class="nav-brand">HJG / portfolio</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="portfolio.html">projects</a></li>
+      <li><a href="activities.html" class="active">activities</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-content">
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <div class="page-hero">
+      <p class="page-eyebrow">Outside the office</p>
+      <h1 class="page-title">Activities</h1>
+    </div>
+
+    <!-- ===================== 01 POWERLIFTING ===================== -->
+    <section class="activity-section">
+      <p class="activity-number">01 &mdash; sport</p>
+      <h2 class="activity-section-title">Powerlifting</h2>
+      <p class="activity-body">
+        Coming soon.
+      </p>
+      <div class="photo-grid">
+        <div class="photo-placeholder">[ photo coming soon ]</div>
+        <div class="photo-placeholder">[ photo coming soon ]</div>
+        <div class="photo-placeholder">[ photo coming soon ]</div>
+      </div>
+    </section>
+
+    <!-- ===================== 02 HIKING & TRAVEL ===================== -->
+    <section class="activity-section">
+      <p class="activity-number">02 &mdash; travel</p>
+      <h2 class="activity-section-title">Hiking &amp; solo travel</h2>
+      <p class="activity-body">
+        Coming soon.
+      </p>
+      <div class="photo-grid">
+        <div class="photo-placeholder">[ photo coming soon ]</div>
+        <div class="photo-placeholder">[ photo coming soon ]</div>
+        <div class="photo-placeholder">[ photo coming soon ]</div>
+      </div>
+    </section>
+
+    <!-- ===================== 03 PHOTOGRAPHY ===================== -->
+    <section class="activity-section" style="margin-bottom: 5rem;">
+      <p class="activity-number">03 &mdash; visual</p>
+      <h2 class="activity-section-title">Photography</h2>
+      <p class="activity-body">
+        Coming soon.
+      </p>
+      <div class="photo-grid">
+        <div class="photo-placeholder">[ photo coming soon ]</div>
+        <div class="photo-placeholder">[ photo coming soon ]</div>
+        <div class="photo-placeholder">[ photo coming soon ]</div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    Harish Jai Ganesh &middot;
+    <a href="https://www.linkedin.com/in/harishjg/" target="_blank" rel="noopener">LinkedIn</a>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+  </script>
+</body>
+</html>

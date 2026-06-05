@@ -1,97 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Harish Jai Ganesh</title>
-        <meta charset="UTF-8"/>
-        <meta name="description" content="The professional website of Harish Jai Ganesh"/>
-        <meta name="keywords" content="Harish, Jai Ganesh, student, engineer, aerospace, projects"/>
-        <meta name="author" content="Harish Jai Ganesh"/>
-        <link rel=”stylesheet” href=”css/bootstrap.css”>
-        <link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" href="CSS/style.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
-        rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    </head>
-    <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" 
-    style="box-shadow: 0 2px 2px -2px rgba(0,0,0,.2); background-color: rgb(234, 234, 234); z-index: 1030; width:100%;">
-            <div class="container-fluid">
-              <a class="navbar-brand active" style="font-size: 25px;" href="#">Harish Jai Ganesh</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-              aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size:18px;">
-                  <li class="nav-item" style="padding-left: 1rem;">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                                    <!--
-                                    <li class="nav-item" style="padding-left: 1rem;">
-                                        <a class="nav-link" href="contact.html">Online Presence</a>
-                                    </li>
-                                    -->
-                                    <li class="nav-item" style="padding-left: 1rem;">
-                                        <a class="nav-link" href="https://www.linkedin.com/in/harishjg/" target="_blank">LinkedIn</a>
-                                    </li>
-                  <li class="nav-item" style="padding-left: 1rem;">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                  </li>
-              </div>
-            </div>
-        </nav>
-        <div id="top_background" class="bg-image p-5 text-center shadow-1-strong" 
-            style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('Pictures/IMG_0392.JPEG');
-            width:100%; background-repeat: no-repeat; position:relative; background-size: cover;
-            background-position: center bottom; background-attachment: fixed; padding-top: 70px;">
-            <div style="align-content: center;" class="row align-items-center d-flex justify-content-center">
-                    <div id="header" class="" style="font-size: 60px; margin-top:8rem; color:#ffffff">
-                    About Me
-                    </div>
-                    <div id="student_description" class="text-center" 
-                    style="width: 80%; height: auto; color: #ffffff; font-size: 30px; margin-bottom: 11rem;
-                    margin-top: 2rem;">
-                        Aerospace Engineer from the University of Michigan.
-                        I'm interested in numerics, fluid dynamics, structures, and design.
-                        (And also Formula 1, powerlifting, and hiking!)
-                    </div>
-            </div>
-        </div>
-        <section id="current_projects" 
-            style="padding-top:3rem; padding-bottom: 2rem; background-color: black;"
-            class="">
-            <!--
-            <section id="my picture">
-                <img src="Pictures/myimg.jpg" id="img-fluid" style="max-width: 100%; height: auto; float:right; border-radius: 5px;
-                padding-right: 1rem; padding-left: 1rem; margin-top:1rem; margin-bottom: 1rem;" 
-                class="img-fluid inline-photo">
-            </section>
-            -->
-            <div id="jumbotron" class="row align-items-center d-flex justify-content-center" 
-            style="background-color: rgb(234, 234, 234); margin-left: 1rem; margin-right: 1rem; border-radius: 5px;">
-                <header>
-                    <h2 id="project_head" style="font-size: 40px; padding-top: 3rem;" 
-                    class="row align-items-center d-flex justify-content-center">
-                        Projects
-                    </h2>
-                </header>
-                <section id="projects_list" style="width:90%; font-size:20px">
-                    <div class="text-center" style="width:100%; font-size:20px; padding-bottom: 3rem;">
-                        <p id="list_title" class="list_title" style="margin: 1rem 0 0 0;">
-                            Head to my <a href="portfolio.html">portfolio</a> to see what I've been working on!
-                        </p>
-                        <div class="description" style="margin-top: 0.5rem;"></div>
-                    </div>
-                </section>
-            </div>
-        </section>
-        
-        <div id="bottom" style="padding-top:50px; background-color: black;">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harish Jai Ganesh</title>
+  <meta name="description" content="Structural analysis engineer — B-21 Raider program. Michigan engineering." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Syne:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
 
+  <!-- ===================== NAV ===================== -->
+  <nav class="site-nav">
+    <a href="index.html" class="nav-brand">HJG / portfolio</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="portfolio.html">projects</a></li>
+      <li><a href="activities.html">activities</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <main class="page-content">
+    <section class="hero">
+      <p class="hero-eyebrow">Structural Analysis Engineer &middot; Northrop Grumman</p>
+      <h1 class="hero-name">
+        Harish<br />
+        <span class="line-italic">Jai Ganesh.</span>
+      </h1>
+      <p class="hero-bio">
+        Building structures that don't fail. Michigan engineering. Equal parts simulation and getting my hands dirty.
+      </p>
+
+      <div class="skill-tags">
+        <span class="tag gold">FEA / MRB</span>
+        <span class="tag">composites</span>
+        <span class="tag">CFD</span>
+        <span class="tag">python &middot; hpc</span>
+        <span class="tag">structural analysis</span>
+      </div>
+<!--
+      <div class="stat-grid">
+        <div class="stat-item">
+          <div class="stat-value">S2</div>
+          <div class="stat-label">clearance</div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    </body>
+        <div class="stat-item">
+          <div class="stat-value">37+</div>
+          <div class="stat-label">countries</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">Composites</div>
+          <div class="stat-label">analysis</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">1289 lbs</div>
+          <div class="stat-label">competition total</div>
+        </div>
+      </div>
+    -->
+    </section>
+
+<!-- ===================== PROJECTS PREVIEW ===================== -->
+<section>
+  <div class="section-header">
+    <h2 class="section-title">Projects</h2>
+    <a href="portfolio.html" class="section-link">view all projects &rarr;</a>
+  </div>
+
+  <div class="projects-grid">
+    <a href="portfolio.html" class="project-card project-card--featured">
+      <span class="card-type">multiphysics · CFD · HPC</span>
+      <h3 class="card-title">Automotive hood FSI simulation pipeline</h3>
+      <p class="card-desc">Built a coupled fluid–structure interaction pipeline in OpenFOAM to model manufacturing defects across 16,000+ hood geometry variants. Automated mesh generation, parallel SLURM execution, and data transfer via preCICE — co-authored paper accepted to NeurIPS 2025.</p>
+      <div class="card-tags">
+        <span class="tag">openfoam</span>
+        <span class="tag">preCICE</span>
+        <span class="tag">HPC · SLURM</span>
+        <span class="tag">python</span>
+      </div>
+      <span class="card-arrow">&rarr;</span>
+    </a>
+
+    <a href="portfolio.html" class="project-card">
+      <span class="card-type">structures · FEA · rocketry</span>
+      <h3 class="card-title">MASA thrust transfer structure</h3>
+      <p class="card-desc">Redesigned the TTS for a 15% thrust increase with a simultaneous 3% weight reduction. Hand calculations verified with ANSYS FEA, buckling failure modes analyzed, and components machined to GD&T spec using Siemens NX and Teamcenter.</p>
+      <div class="card-tags">
+        <span class="tag">ANSYS FEA</span>
+        <span class="tag">Siemens NX</span>
+        <span class="tag">GD&T</span>
+        <span class="tag">buckling</span>
+      </div>
+      <span class="card-arrow">&rarr;</span>
+    </a>
+
+    <a href="portfolio.html" class="project-card">
+      <span class="card-type">aerodynamics · CFD · test</span>
+      <h3 class="card-title">Adaptive camber wing</h3>
+      <p class="card-desc">Simulations and wind tunnel testing lead for a continuously variable camber wing. Ran ANSYS Fluent CFD across three camber modes and three angles of attack, then validated against wind tunnel data — achieved 4–8% L/D improvement over conventional flaps.</p>
+      <div class="card-tags">
+        <span class="tag">ANSYS Fluent</span>
+        <span class="tag">wind tunnel</span>
+        <span class="tag">camber</span>
+        <span class="tag">L/D</span>
+      </div>
+      <span class="card-arrow">&rarr;</span>
+    </a>
+
+    <a href="portfolio.html" class="project-card">
+      <span class="card-type">composites · materials</span>
+      <h3 class="card-title">Carbon fiber surface treatment study</h3>
+      <p class="card-desc">Investigated chemical surface treatments to improve carbon fiber composite bonding strength with aramid additives. Performed composite layups, industry-standard structural tests, and SEM imaging to characterize bonding at the micro scale.</p>
+      <div class="card-tags">
+        <span class="tag">composites</span>
+        <span class="tag">SEM</span>
+        <span class="tag">surface treatment</span>
+        <span class="tag">CFRP</span>
+      </div>
+      <span class="card-arrow">&rarr;</span>
+    </a>
+  </div>
+</section>
+
+    <!-- ===================== ACTIVITIES PREVIEW ===================== -->
+    <section>
+      <div class="section-header">
+        <h2 class="section-title">Activities</h2>
+        <a href="activities.html" class="section-link">see more &rarr;</a>
+      </div>
+
+      <div class="activities-grid">
+        <a href="activities.html" class="activity-card">
+          <span class="card-type">sport</span>
+          <h3 class="activity-title">Powerlifting</h3>
+          <p class="activity-desc">Competitive squat, bench, and deadlift. Meet prep, programming, and the long game of moving heavy things.</p>
+        </a>
+        <a href="activities.html" class="activity-card">
+          <span class="card-type">travel</span>
+          <h3 class="activity-title">Hiking &amp; solo travel</h3>
+          <p class="activity-desc">Great Sand Dunes, CO recently. Hiking along the Appalachians and Rocky Mountains</p>
+        </a>
+        <a href="activities.html" class="activity-card">
+          <span class="card-type">visual</span>
+          <h3 class="activity-title">Photography</h3>
+          <p class="activity-desc">Landscapes and travel frames.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    Harish Jai Ganesh &middot;
+    <a href="https://www.linkedin.com/in/harishjg/" target="_blank" rel="noopener">LinkedIn</a>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+  </script>
+</body>
 </html>

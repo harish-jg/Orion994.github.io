@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automotive Hood FSI Pipeline — Harish Jai Ganesh</title>
+  <meta name="description" content="Coupled fluid–structure interaction simulation pipeline for automotive hood stamping defect modeling across 16,000+ geometry variants." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Syne:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="../index.html" class="nav-brand">HJG / portfolio</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../portfolio.html" class="active">projects</a></li>
+      <li><a href="../activities.html">activities</a></li>
+      <li><a href="../about.html">about</a></li>
+      <li><a href="../contact.html">contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-content">
+
+    <a href="../portfolio.html" class="proj-back">← all projects</a>
+
+    <div class="proj-hero">
+      <p class="proj-hero-eyebrow">multiphysics · CFD · HPC</p>
+      <h1 class="proj-hero-title">Automotive hood FSI simulation pipeline</h1>
+      <p class="proj-hero-role">Simulations & Computation Lead · University of Michigan / Ford Motor Company</p>
+    </div>
+
+    <div class="proj-body">
+
+      <div class="proj-section">
+        <h3>Overview</h3>
+        <p>Built a coupled fluid–structure interaction pipeline to model aerodynamic-induced stamping defects across 16,000+ automotive hood geometry variants for Ford Motor Company. The pipeline generates large-scale simulation datasets for downstream machine learning models that predict surface defect likelihood directly from manufacturing geometry. Co-authored paper accepted to NeurIPS 2025.</p>
+      </div>
+
+      <div class="proj-section">
+        <h3>Approach & methodology</h3>
+        <p>Custom solver modifications to OpenFOAM's pimpleFoam (fluid) and solidDisplacementFoam (structural) enabled bidirectional field coupling via preCICE middleware. Projection mapping was implemented for data transfer between non-conforming fluid and structural meshes at the shared interface boundary.</p>
+        <p>The complete STL-to-displacement-field pipeline was automated on HPC infrastructure via SLURM job scripts. Mesh cell count and time-domain parameters were optimized to reduce total CPU runtime while preserving solution accuracy. Python post-processing scripts parsed solver output into structured tensors suitable for ML training ingestion.</p>
+      </div>
+
+      <div class="proj-section">
+        <h3>Tools & techniques</h3>
+        <p>OpenFOAM (pimpleFoam, solidDisplacementFoam), preCICE coupling library, SLURM workload manager, Python (NumPy, mesh I/O, data pipeline), STL geometry processing, HPC cluster environment, projection mapping for field transfer across non-conforming meshes.</p>
+      </div>
+
+      <div class="proj-section">
+        <h3>Outcomes & results</h3>
+        <p>Delivered a fully automated pipeline capable of processing 16,000+ hood geometry variants end-to-end without manual intervention. Cell count and time-domain optimizations reduced total CPU runtime significantly per variant. Simulation outputs were packaged as structured ML-ready training data. Work contributed to a paper accepted at NeurIPS 2025.</p>
+      </div>
+
+      <div class="proj-section proj-section--full">
+        <h3>Images</h3>
+        <div class="proj-image-grid">
+          <div class="proj-image-placeholder" data-label="OpenFOAM mesh — fluid domain (750K cells)"></div>
+          <div class="proj-image-placeholder" data-label="preCICE coupling diagram"></div>
+          <div class="proj-image-placeholder" data-label="Hood STL to displacement field pipeline"></div>
+          <div class="proj-image-placeholder" data-label="Pressure and displacement field outputs"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <a href="../portfolio.html" class="proj-back proj-back--bottom">← back to all projects</a>
+
+  </main>
+
+  <footer class="site-footer">
+    Harish Jai Ganesh &middot; harishjg@gmail.com &middot;
+    <a href="https://www.linkedin.com/in/harishjg/" target="_blank" rel="noopener">LinkedIn</a>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+  </script>
+</body>
+</html>

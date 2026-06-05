@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>In-House Appliance Certification Test Stand — Harish Jai Ganesh</title>
+  <meta name="description" content="Full-cycle design and build of an appliance certification test stand at Midea America — $50K savings per test cycle." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Syne:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="../index.html" class="nav-brand">HJG / portfolio</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../portfolio.html" class="active">projects</a></li>
+      <li><a href="../activities.html">activities</a></li>
+      <li><a href="../about.html">about</a></li>
+      <li><a href="../contact.html">contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-content">
+
+    <a href="../portfolio.html" class="proj-back">← all projects</a>
+
+    <div class="proj-hero">
+      <p class="proj-hero-eyebrow">mechanical design · test engineering</p>
+      <h1 class="proj-hero-title">In-house appliance certification test stand</h1>
+      <p class="proj-hero-role">Test Engineering Intern · Midea America</p>
+    </div>
+
+    <div class="proj-body">
+
+      <div class="proj-section">
+        <h3>Overview</h3>
+        <p>Developed a complete in-house appliance certification testing capability at Midea America, eliminating the company's dependency on expensive external certification agencies. The project spanned the full engineering cycle — apparatus design, prototype assembly, test protocol development, and SOP documentation — creating a reusable internal asset that saves $50K per test cycle.</p>
+      </div>
+
+      <div class="proj-section">
+        <h3>Approach & methodology</h3>
+        <p>Designed the test apparatus in Creo applying DFMA principles to minimize part count and simplify assembly for repeated use by test technicians. Airflow measurement components were machined in metal to meet the dimensional tolerances required for accurate certification-grade measurements. A representative prototype stand was assembled to validate the design before finalizing documentation.</p>
+        <p>Authored a complete test protocol specifying setup procedures, measurement sampling methodology, instrumentation requirements, and acceptance criteria. A statistical sampling study was performed to determine appropriate sample sizes and measurement frequencies for defensible certification data. SOP documentation was written for ongoing use by the test engineering team after handoff. Concurrently led an intern group on parallel prototype research and performed thermal simulations of appliance components.</p>
+      </div>
+
+      <div class="proj-section">
+        <h3>Tools & techniques</h3>
+        <p>Creo (CAD design, DFMA analysis), manual machining (mill and lathe — metal airflow components), thermal simulation, test instrumentation and data acquisition, technical documentation (test protocol, statistical sampling study, SOP).</p>
+      </div>
+
+      <div class="proj-section">
+        <h3>Outcomes & results</h3>
+        <p>Eliminated dependency on external certification agencies, delivering $50K savings per test cycle. Functional prototype assembled and validated against design intent. Complete test documentation package — protocol, sampling study, and SOP — authored for engineering team handoff and ongoing use. Led intern group deliverables in parallel with primary project work.</p>
+      </div>
+
+      <div class="proj-section proj-section--full">
+        <h3>Images</h3>
+        <div class="proj-image-grid">
+          <div class="proj-image-placeholder" data-label="Test stand assembly photo"></div>
+          <div class="proj-image-placeholder" data-label="Creo CAD model — apparatus"></div>
+          <div class="proj-image-placeholder" data-label="Airflow component machining"></div>
+          <div class="proj-image-placeholder" data-label="Prototype test setup"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <a href="../portfolio.html" class="proj-back proj-back--bottom">← back to all projects</a>
+
+  </main>
+
+  <footer class="site-footer">
+    Harish Jai Ganesh &middot; harishjg@gmail.com &middot;
+    <a href="https://www.linkedin.com/in/harishjg/" target="_blank" rel="noopener">LinkedIn</a>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+  </script>
+</body>
+</html>

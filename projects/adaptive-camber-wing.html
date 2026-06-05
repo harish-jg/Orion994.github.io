@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adaptive Camber Wing — Harish Jai Ganesh</title>
+  <meta name="description" content="CFD simulation and wind tunnel testing for an adaptive camber wing achieving 4–8% L/D improvement over conventional flaps." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Syne:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="../index.html" class="nav-brand">HJG / portfolio</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../portfolio.html" class="active">projects</a></li>
+      <li><a href="../activities.html">activities</a></li>
+      <li><a href="../about.html">about</a></li>
+      <li><a href="../contact.html">contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-content">
+
+    <a href="../portfolio.html" class="proj-back">← all projects</a>
+
+    <div class="proj-hero">
+      <p class="proj-hero-eyebrow">aerodynamics · CFD · test</p>
+      <h1 class="proj-hero-title">Adaptive camber wing</h1>
+      <p class="proj-hero-role">Simulations & Testing Lead · University of Michigan Aerospace Engineering</p>
+    </div>
+
+    <div class="proj-body">
+
+      <div class="proj-section">
+        <h3>Overview</h3>
+        <p>Senior design-build-test project at the University of Michigan developing a wing with continuously variable camber capability. Led the CFD simulation campaign and wind tunnel testing program, characterizing aerodynamic performance across a structured matrix of camber configurations and angles of attack. The project demonstrated a measurable lift-to-drag improvement over conventional discrete-flap designs, presented to faculty and industry reviewers.</p>
+      </div>
+
+      <div class="proj-section">
+        <h3>Approach & methodology</h3>
+        <p>Built a full 3D wing geometry and extracted representative 2D cross-sections for ANSYS Fluent CFD analysis. Mesh refinement was applied as a function of chord length, with additional targeted refinement at the leading and trailing edges to resolve boundary layer behavior and capture flow separation onset accurately. A structured nine-configuration test matrix covered three camber settings (baseline, moderate, and high deflection) at three angles of attack each.</p>
+        <p>Lift and drag coefficients were extracted from each CFD case, and Cp distributions and flow separation patterns were visualized to understand the aerodynamic mechanisms at each configuration. Wind tunnel testing used the same configuration matrix for experimental validation, with the physical wing fabricated to match the CFD geometry. Correlation between CFD predictions and tunnel measurements was assessed across the full test matrix.</p>
+      </div>
+
+      <div class="proj-section">
+        <h3>Tools & techniques</h3>
+        <p>ANSYS Fluent (steady RANS CFD), ANSYS Meshing (chord-length-based structured refinement, LE/TE edge sizing), University of Michigan low-speed wind tunnel, wing fabrication, force balance and pressure tap data acquisition, Cp visualization and Cl/Cd extraction.</p>
+      </div>
+
+      <div class="proj-section">
+        <h3>Outcomes & results</h3>
+        <p>Demonstrated a 4–8% lift-to-drag ratio improvement over conventional fixed-flap configurations across the tested operating range. Wind tunnel results correlated with CFD predictions, validating the simulation approach and confirming the performance benefit across all three camber modes. Findings were presented to faculty and industry reviewers at the end-of-term design review.</p>
+      </div>
+
+      <div class="proj-section proj-section--full">
+        <h3>Images</h3>
+        <div class="proj-image-grid">
+          <div class="proj-image-placeholder" data-label="ANSYS Fluent mesh — chord-length refinement"></div>
+          <div class="proj-image-placeholder" data-label="Cp distribution — three camber modes"></div>
+          <div class="proj-image-placeholder" data-label="Wing fabrication photo"></div>
+          <div class="proj-image-placeholder" data-label="Wind tunnel test setup"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <a href="../portfolio.html" class="proj-back proj-back--bottom">← back to all projects</a>
+
+  </main>
+
+  <footer class="site-footer">
+    Harish Jai Ganesh &middot; harishjg@gmail.com &middot;
+    <a href="https://www.linkedin.com/in/harishjg/" target="_blank" rel="noopener">LinkedIn</a>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+  </script>
+</body>
+</html>
