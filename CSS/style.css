@@ -341,10 +341,12 @@ ul { list-style: none; }
    ========================================================= */
 .activities-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid var(--border);
-  border-left: 1px solid var(--border);
-  margin-bottom: 4rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(240,237,232,0.06);
+  border: 0.5px solid rgba(240,237,232,0.06);
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .activity-card {
@@ -354,6 +356,7 @@ ul { list-style: none; }
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  background: #0f0e0d;
 }
 
 .activity-card .card-type { color: var(--text-dim); }
@@ -414,6 +417,10 @@ ul { list-style: none; }
   border-bottom: 1px solid var(--border);
 }
 
+.activity-section:first-of-type {
+  padding-top: 0;
+}
+
 .activity-section-title {
   font-family: var(--font-serif);
   font-size: clamp(1.8rem, 4vw, 2.8rem);
@@ -441,8 +448,15 @@ ul { list-style: none; }
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  background: var(--border);
+  gap: 0.75rem;
+}
+
+.photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
 }
 
 .photo-placeholder {
@@ -491,17 +505,30 @@ ul { list-style: none; }
 /* =========================================================
    About page
    ========================================================= */
-.about-layout {
+.about-hero {
   display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 4rem;
-  padding-top: 3rem;
-  align-items: start;
+  grid-template-columns: 300px 1fr;
+  gap: 3rem;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.about-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 2px;
+  display: block;
 }
 
 .about-section {
   padding: 2.5rem 0;
   border-bottom: 1px solid var(--border);
+}
+
+.about-section:first-child {
+  padding-top: 0;
 }
 
 .about-section:last-child { border-bottom: none; }
@@ -516,25 +543,21 @@ ul { list-style: none; }
 
 .about-body + .about-body { margin-top: 1rem; }
 
-.about-photo {
-  position: sticky;
-  top: 80px;
-}
-
-@media (max-width: 780px) {
-  .about-layout {
+@media (max-width: 768px) {
+  .about-hero {
     grid-template-columns: 1fr;
-    gap: 2rem;
   }
 
-  .about-photo { position: static; }
+  .about-photo {
+    max-width: 280px;
+  }
 }
 
 /* =========================================================
    Contact page
    ========================================================= */
 .contact-body {
-  padding: 3rem 0 5rem;
+  padding: 0 0 5rem;
 }
 
 .contact-links {
@@ -583,7 +606,7 @@ ul { list-style: none; }
    PROJECT SUBPAGES
    ========================================================= */
 
-/* Transparent wrappers in portfolio.html only — index.html cards are <a class="project-card"> themselves */
+/* Transparent wrappers in experience.html only — index.html cards are <a class="project-card"> themselves */
 .projects-grid > a:not(.project-card) {
   display: contents;
 }
@@ -680,11 +703,23 @@ ul { list-style: none; }
 /* Image gallery placeholders */
 .proj-image-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1rem;
   width: 100%;
   box-sizing: border-box;
-  overflow: hidden;
+}
+
+.proj-image-grid:has(> :nth-child(4)) {
+  grid-template-columns: 1fr 1fr;
+}
+
+.proj-image-grid .proj-image-placeholder,
+.proj-image-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: #0f0e0d;
+  box-sizing: border-box;
 }
 
 .proj-image {
@@ -730,4 +765,41 @@ ul { list-style: none; }
 
 @media (max-width: 680px) {
   .proj-image-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Lift stats grid ─────────────────────────────────── */
+.lift-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(240,237,232,0.06);
+  border: 0.5px solid rgba(240,237,232,0.06);
+  border-radius: 2px;
+  margin: 1.5rem 0;
+}
+
+.lift-stat {
+  background: #0f0e0d;
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.lift-number {
+  font-family: 'Instrument Serif', serif;
+  font-size: 28px;
+  color: #f0ede8;
+  line-height: 1;
+}
+
+.lift-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: rgba(240,237,232,0.35);
+}
+
+@media (max-width: 768px) {
+  .lift-stats { grid-template-columns: 1fr 1fr; }
 }

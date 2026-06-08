@@ -19,7 +19,7 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="../portfolio.html" class="active">projects</a></li>
+      <li><a href="../experience.html" class="active">experience</a></li>
       <li><a href="../activities.html">activities</a></li>
       <li><a href="../about.html">about</a></li>
       <li><a href="../contact.html">contact</a></li>
@@ -28,7 +28,7 @@
 
   <main class="page-content">
 
-    <a href="../portfolio.html" class="proj-back">← all projects</a>
+    <a href="../experience.html" class="proj-back">← all projects</a>
 
     <div class="proj-hero">
       <p class="proj-hero-eyebrow">thermal systems · simulation</p>
@@ -40,13 +40,17 @@
 
       <div class="proj-section">
         <h3>Overview</h3>
-        <p>Designed and modeled a thermoelectric cooler (TEC)-based water cooling loop for compact electronics packaging. The project focused on developing a physics-based thermal simulation capable of predicting transient temperature response under variable power loads, enabling system sizing and TEC operating point selection before hardware fabrication.</p>
+        <p>Designed and modeled a thermoelectric cooler (TEC)-based water cooling loop for compact electronics packaging. 
+          The project focused on developing a physics-based thermal simulation capable of predicting transient temperature response under variable power loads, enabling system sizing and TEC operating point selection before hardware fabrication.</p>
       </div>
 
       <div class="proj-section">
         <h3>Approach & methodology</h3>
-        <p>The system was represented as a lumped-mass thermal RC network capturing the dominant heat transfer paths: cold plate thermal resistance and capacitance, TEC module coefficient of performance and thermal resistance, heat sink convective resistance, and coolant loop thermal mass. Each node corresponded to a physical component, and the network topology was drawn to match the physical heat flow path from electronics junction through the cold plate, TEC, and heat sink to ambient.</p>
-        <p>The network was formulated as a system of first-order coupled ODEs. An implicit backward Euler time-stepping scheme was implemented in MATLAB — chosen over explicit methods for unconditional numerical stability, allowing large timesteps without solution divergence under the stiff thermal dynamics of TEC systems. The solver was validated against known steady-state boundary conditions before running transient simulations with variable power input profiles.</p>
+        <p>The system was represented as a lumped-mass thermal RC network capturing the dominant heat transfer paths: appliance thermal resistance and capacitance, TEC module coefficient of performance and thermal resistance, heat sink convective resistance, and coolant loop thermal mass. 
+          Each node corresponded to a physical component, and the network topology was drawn to match the physical heat flow path from electronics junction through the cold plate, TEC, and heat sink to ambient.</p>
+        <p>The network was formulated as a system of first-order coupled ODEs. 
+          An implicit backward Euler time-stepping scheme was implemented in MATLAB, chosen over explicit methods for unconditional numerical stability, allowing large timesteps without solution divergence under the stiff thermal dynamics of TEC systems. 
+          The solver was validated against known steady-state boundary conditions before running transient simulations with variable power input profiles.</p>
       </div>
 
       <div class="proj-section">
@@ -56,22 +60,14 @@
 
       <div class="proj-section">
         <h3>Outcomes & results</h3>
-        <p>Delivered a MATLAB simulation tool predicting transient cold plate and junction temperatures under variable power inputs with unconditional numerical stability at large timesteps. Parametric studies identified thermal bottlenecks and evaluated trade-offs between TEC operating current, cold side temperature, and heat sink thermal resistance. Results directly informed component sizing decisions for the cooling loop design.</p>
-      </div>
-
-      <div class="proj-section proj-section--full">
-        <h3>Images</h3>
-        <div class="proj-image-grid">
-          <div class="proj-image-placeholder" data-label="Thermal RC network diagram"></div>
-          <div class="proj-image-placeholder" data-label="MATLAB temperature vs time plot"></div>
-          <div class="proj-image-placeholder" data-label="Cold plate and TEC assembly photo"></div>
-          <div class="proj-image-placeholder" data-label="Bench test setup"></div>
-        </div>
+        <p>Delivered a MATLAB simulation tool predicting transient cold plate and junction temperatures under variable power inputs with unconditional numerical stability at large timesteps. 
+          Parametric studies identified thermal bottlenecks and evaluated trade-offs between TEC operating current, cold side temperature, and heat sink thermal resistance. 
+          Results directly informed component sizing decisions and power requirementsfor the cooling loop design.</p>
       </div>
 
     </div>
 
-    <a href="../portfolio.html" class="proj-back proj-back--bottom">← back to all projects</a>
+    <a href="../experience.html" class="proj-back proj-back--bottom">← back to all projects</a>
 
   </main>
 
