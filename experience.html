@@ -8,7 +8,7 @@
   <meta name="description" content="Engineering projects — FEA, composites, CFD, thermal systems." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Syne:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500&family=Syne:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="CSS/style.css" />
 </head>
 <body>
@@ -31,7 +31,7 @@
 
     <!-- ===================== PAGE HERO ===================== -->
     <div class="page-hero">
-      <p class="page-eyebrow">Engineering work</p>
+      <p class="page-eyebrow">My Work</p>
       <h1 class="page-title">Engineering</h1>
     </div>
 
@@ -39,20 +39,16 @@
     <div class="projects-grid" style="margin-bottom: 5rem;">
 
       <!-- 1 - FSI Pipeline (featured) -->
-      <a href="projects/fsi-pipeline.html">
-      <div class="project-card project-card--featured">
+      <a href="projects/fsi-pipeline.html" class="project-card project-card--featured">
         <span class="card-type">multiphysics · CFD · HPC</span>
         <h2 class="card-title">Automotive hood FSI simulation pipeline</h2>
-        <p class="card-desc">
-          Built a coupled fluid–structure interaction pipeline to model stamping
-          defects across 16,000+ automotive hood geometry variants for Ford.
-          Custom versions of OpenFOAM's pimpleFoam and solidDisplacementFoam
-          run in parallel, with projection mapping and data transfer handled by
-          preCICE. The STL-to-displacement-field workflow is fully automated on
-          HPC via SLURM, with cell-count and time-domain optimization cutting
-          total CPU runtime significantly. Python scripts processed simulation
-          outputs into ML training data. Co-authored paper accepted to NeurIPS 2025.
-        </p>
+        <ul class="card-bullets">
+          <li>Built coupled OpenFOAM FSI pipeline to model stamping defects across 16,000+ hood geometry variants for Ford</li>
+          <li>Custom pimpleFoam and solidDisplacementFoam solvers run in parallel with preCICE handling projection mapping and data transfer</li>
+          <li>Automated STL-to-displacement-field workflow on HPC via SLURM, cutting total CPU runtime significantly</li>
+          <li>Wrote Python scripts to process simulation outputs into ML training data</li>
+          <li>Co-authored paper accepted to NeurIPS 2025</li>
+        </ul>
         <div class="card-tags">
           <span class="tag">openfoam</span>
           <span class="tag">preCICE</span>
@@ -61,24 +57,19 @@
           <span class="tag">FSI</span>
         </div>
         <span class="card-arrow">&rarr;</span>
-      </div>
       </a>
 
       <!-- 2 - MASA TTS -->
-      <a href="projects/masa-tts.html">
-      <div class="project-card">
+      <a href="projects/masa-tts.html" class="project-card">
         <span class="card-type">structures · FEA · rocketry</span>
         <h2 class="card-title">MASA thrust transfer structure</h2>
-        <p class="card-desc">
-          Led the TTS subteam for Michigan's competitive rocketry program.
-          Redesigned the structure to accommodate a 15% thrust increase while
-          achieving a 3% weight reduction. Developed analytical solutions for
-          load paths and failure stresses, including buckling failure mode
-          analysis, then verified against ANSYS FEA. Modeled in Siemens NX
-          with version control through Teamcenter. Applied GD&T per ASME Y14.5,
-          collaborated with propulsion and fuel tank leads on interface
-          compatibility, and personally machined parts on mill and lathe.
-        </p>
+        <ul class="card-bullets">
+          <li>Redesigned TTS to accommodate 15% higher thrust while achieving 3% weight reduction</li>
+          <li>Developed analytical solutions for load paths, bearing stress, shear, and buckling failure modes from first principles</li>
+          <li>Verified hand calculations against ANSYS Mechanical FEA and iterated on geometry at stress concentrations</li>
+          <li>Modeled in Siemens NX with version control through Teamcenter, GD&T per ASME Y14.5</li>
+          <li>Machined parts to tolerances on mill and lathe</li>
+        </ul>
         <div class="card-tags">
           <span class="tag">ANSYS FEA</span>
           <span class="tag">Siemens NX</span>
@@ -87,25 +78,19 @@
           <span class="tag">Teamcenter</span>
         </div>
         <span class="card-arrow">&rarr;</span>
-      </div>
       </a>
 
       <!-- 3 - Adaptive Camber Wing -->
-      <a href="projects/adaptive-camber-wing.html">
-      <div class="project-card">
+      <a href="projects/adaptive-camber-wing.html" class="project-card">
         <span class="card-type">aerodynamics · CFD · test</span>
         <h2 class="card-title">Adaptive camber wing</h2>
-        <p class="card-desc">
-          Simulations and wind tunnel testing lead for a senior design-build-test
-          course at Michigan. Built a 3D wing model and reduced to 2D for ANSYS
-          Fluent CFD — mesh refined as a function of chord length, with
-          additional refinement at leading and trailing edges. Ran nine
-          configurations across three camber modes and three angles of attack to
-          extract lift and drag coefficients and visualize flow separation.
-          Wind tunnel testing validated the same matrix. Achieved a 4–8% L/D
-          improvement over conventional flaps. Presented findings to faculty
-          and industry reviewers.
-        </p>
+        <ul class="card-bullets">
+          <li>Simulations and wind tunnel testing lead for a senior design-build-test course at Michigan</li>
+          <li>Built 3D wing model, reduced to 2D for ANSYS Fluent CFD with chord-length-based mesh refinement</li>
+          <li>Ran nine configurations across three camber modes and three angles of attack for Cl, Cd, and flow separation</li>
+          <li>Wind tunnel testing validated the same matrix — achieved 4-8% L/D improvement over conventional flaps</li>
+          <li>Presented findings to course faculty and industry reviewers</li>
+        </ul>
         <div class="card-tags">
           <span class="tag">ANSYS Fluent</span>
           <span class="tag">wind tunnel</span>
@@ -113,22 +98,18 @@
           <span class="tag">L/D</span>
         </div>
         <span class="card-arrow">&rarr;</span>
-      </div>
       </a>
 
       <!-- 4 - Carbon Fiber Study -->
-      <a href="projects/carbon-fiber-study.html">
-      <div class="project-card">
+      <a href="projects/carbon-fiber-study.html" class="project-card">
         <span class="card-type">composites · materials</span>
         <h2 class="card-title">Carbon fiber surface treatment study</h2>
-        <p class="card-desc">
-          Investigated chemical surface treatments to improve interfacial bonding
-          strength between carbon fiber and aramid additives in composite
-          systems. Performed composite layups and industry-standard structural
-          evaluation tests. Used scanning electron microscopy (SEM) to
-          characterize chemical and physical bonding at the micro scale,
-          correlating surface morphology with measured mechanical performance.
-        </p>
+        <ul class="card-bullets">
+          <li>Investigated chemical surface treatments to improve interfacial bonding between carbon fiber and aramid additives</li>
+          <li>Performed composite layups and multiple industry-standard structural evaluation tests</li>
+          <li>Used SEM imaging to characterize chemical and physical bonding at the micro scale</li>
+          <li>Correlated surface morphology observations with measured mechanical performance</li>
+        </ul>
         <div class="card-tags">
           <span class="tag">composites</span>
           <span class="tag">SEM</span>
@@ -137,23 +118,18 @@
           <span class="tag">aramid</span>
         </div>
         <span class="card-arrow">&rarr;</span>
-      </div>
       </a>
 
-      <!-- 5 - Midea / Appliance Testing -->
-      <a href="projects/midea-test-stand.html">
-      <div class="project-card">
+      <!-- 5 - Midea -->
+      <a href="projects/midea-test-stand.html" class="project-card">
         <span class="card-type">mechanical design · test engineering</span>
         <h2 class="card-title">In-house appliance certification test stand</h2>
-        <p class="card-desc">
-          Developed a complete in-house testing capability at Midea America,
-          eliminating dependency on external certification agencies and saving
-          $50K per test cycle. Designed the test apparatus in Creo using DFMA
-          principles, machined metal airflow components, and assembled a
-          representative prototype stand. Authored the test protocol, sampling
-          study, and SOP documentation. Also led intern group on prototype
-          research and performed thermal simulations.
-        </p>
+        <ul class="card-bullets">
+          <li>Designed full in-house certification test capability at Midea America, saving $50K per test cycle</li>
+          <li>Designed apparatus in Creo using DFMA principles — low part count, repeatable assembly without engineering support</li>
+          <li>Machined metal airflow components and assembled representative prototype stand</li>
+          <li>Authored test protocol, statistical sampling study, and SOP for full-time team handoff</li>
+        </ul>
         <div class="card-tags">
           <span class="tag">Creo</span>
           <span class="tag">DFMA</span>
@@ -162,22 +138,18 @@
           <span class="tag">SOP</span>
         </div>
         <span class="card-arrow">&rarr;</span>
-      </div>
       </a>
 
       <!-- 6 - Peltier Cooler -->
-      <a href="projects/peltier-cooler.html">
-      <div class="project-card">
+      <a href="projects/peltier-cooler.html" class="project-card">
         <span class="card-type">thermal systems · simulation</span>
         <h2 class="card-title">Peltier water cooling system</h2>
-        <p class="card-desc">
-          Designed and modeled a TEC-based water cooling loop for compact
-          electronics packaging. Built a lumped-mass thermal RC network
-          representing the cold plate, TEC, and heat sink, then implemented
-          an implicit backward Euler time-stepping solver in MATLAB for
-          numerical stability at large timesteps. Predicted transient
-          temperatures under variable power loads.
-        </p>
+        <ul class="card-bullets">
+          <li>Designed and modeled a TEC-based water cooling loop for compact electronics packaging</li>
+          <li>Built lumped-mass thermal RC network representing cold plate, TEC, and heat sink</li>
+          <li>Implemented implicit backward Euler time-stepping solver in MATLAB for numerical stability at large timesteps</li>
+          <li>Predicted transient temperatures under variable power loads</li>
+        </ul>
         <div class="card-tags">
           <span class="tag">matlab</span>
           <span class="tag">thermal RC</span>
@@ -185,11 +157,9 @@
           <span class="tag">TEC</span>
         </div>
         <span class="card-arrow">&rarr;</span>
-      </div>
       </a>
 
     </div>
-  </main>
 
   <!-- ===================== FOOTER ===================== -->
   <footer class="site-footer">

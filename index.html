@@ -8,7 +8,7 @@
   <meta name="description" content="Structural analysis engineer. Michigan engineering." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Syne:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500&family=Syne:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="CSS/style.css" />
 </head>
 <body>
@@ -36,7 +36,9 @@
         <span class="line-italic">Jai Ganesh.</span>
       </h1>
       <p class="hero-bio">
-        Building structures that don't fail. Michigan engineering. Equal parts simulation and getting my hands dirty.
+        Building structures that don't fail.<br />
+        B.S.E. Aerospace engineering, University of Michigan.<br />
+        Long-term interest in revolutionizing high performance flight.
       </p>
 
       <div class="skill-tags">
@@ -49,73 +51,80 @@
 
     </section>
 
-<!-- ===================== EXPERIENCE PREVIEW ===================== -->
-<section>
-  <div class="section-header">
-    <h2 class="section-title">Experience</h2>
-    <a href="experience.html" class="section-link">view all work &rarr;</a>
-  </div>
+    <!-- ===================== EXPERIENCE PREVIEW ===================== -->
+    <section>
+    <div class="section-header">
+        <h2 class="section-title">Engineering</h2>
+        <a href="experience.html" class="section-link">view all &rarr;</a>
+    </div>
 
-  <div class="projects-grid">
-    <a href="experience.html" class="project-card project-card--featured">
-      <span class="card-type">multiphysics · CFD · HPC</span>
-      <h3 class="card-title">Automotive hood FSI simulation pipeline</h3>
-      <p class="card-desc">Built a coupled fluid–structure interaction pipeline in OpenFOAM to model manufacturing defects across 16,000+ hood geometry variants. 
-        Automated mesh generation, parallel SLURM execution, and data transfer via preCICE. 
-        Co-authored paper accepted to NeurIPS 2025.</p>
-      <div class="card-tags">
-        <span class="tag">openfoam</span>
-        <span class="tag">preCICE</span>
-        <span class="tag">HPC · SLURM</span>
-        <span class="tag">python</span>
-      </div>
-      <span class="card-arrow">&rarr;</span>
-    </a>
+    <div class="projects-grid">
+        <a href="projects/fsi-pipeline.html" class="project-card project-card--featured">
+        <span class="card-type">multiphysics · CFD · HPC</span>
+        <h3 class="card-title">Automotive hood FSI simulation pipeline</h3>
+        <ul class="card-bullets">
+            <li>Built coupled OpenFOAM FSI pipeline across 16,000+ hood geometry variants for Ford</li>
+            <li>Automated STL-to-displacement-field workflow on HPC via SLURM</li>
+            <li>Co-authored paper accepted to NeurIPS 2025</li>
+        </ul>
+        <div class="card-tags">
+            <span class="tag">openfoam</span>
+            <span class="tag">preCICE</span>
+            <span class="tag">HPC · SLURM</span>
+            <span class="tag">python</span>
+        </div>
+        <span class="card-arrow">&rarr;</span>
+        </a>
 
-    <a href="experience.html" class="project-card">
-      <span class="card-type">structures · FEA · rocketry</span>
-      <h3 class="card-title">MASA thrust transfer structure</h3>
-      <p class="card-desc">Redesigned the TTS for a 15% thrust increase with a simultaneous 3% weight reduction. 
-        Hand calculations verified with ANSYS FEA, buckling failure modes analyzed, and components machined to GD&T spec using Siemens NX and Teamcenter.</p>
-      <div class="card-tags">
-        <span class="tag">ANSYS FEA</span>
-        <span class="tag">Siemens NX</span>
-        <span class="tag">GD&T</span>
-        <span class="tag">buckling</span>
-      </div>
-      <span class="card-arrow">&rarr;</span>
-    </a>
+        <a href="projects/masa-tts.html" class="project-card">
+        <span class="card-type">structures · FEA · rocketry</span>
+        <h3 class="card-title">MASA thrust transfer structure</h3>
+        <ul class="card-bullets">
+            <li>Redesigned TTS for 15% higher thrust with 3% weight reduction</li>
+            <li>Verified hand calculations with ANSYS FEA, including buckling failure modes</li>
+            <li>Machined parts to GD&T spec on mill and lathe</li>
+        </ul>
+        <div class="card-tags">
+            <span class="tag">ANSYS FEA</span>
+            <span class="tag">Siemens NX</span>
+            <span class="tag">GD&T</span>
+        </div>
+        <span class="card-arrow">&rarr;</span>
+        </a>
 
-    <a href="experience.html" class="project-card">
-      <span class="card-type">aerodynamics · CFD · test</span>
-      <h3 class="card-title">Adaptive camber wing</h3>
-      <p class="card-desc">Simulations and wind tunnel testing lead for a continuously variable camber wing. 
-        Ran ANSYS Fluent CFD across three camber modes and three angles of attack, then validated against wind tunnel data. 
-        Achieved 4–8% L/D improvement over conventional flaps.</p>
-      <div class="card-tags">
-        <span class="tag">ANSYS Fluent</span>
-        <span class="tag">wind tunnel</span>
-        <span class="tag">camber</span>
-        <span class="tag">L/D</span>
-      </div>
-      <span class="card-arrow">&rarr;</span>
-    </a>
+        <a href="projects/adaptive-camber-wing.html" class="project-card">
+        <span class="card-type">aerodynamics · CFD · test</span>
+        <h3 class="card-title">Adaptive camber wing</h3>
+        <ul class="card-bullets">
+            <li>Led CFD and wind tunnel testing across 9 configurations</li>
+            <li>Achieved 4-8% L/D improvement over conventional flaps</li>
+            <li>Presented findings to faculty and industry reviewers</li>
+        </ul>
+        <div class="card-tags">
+            <span class="tag">ANSYS Fluent</span>
+            <span class="tag">wind tunnel</span>
+            <span class="tag">L/D</span>
+        </div>
+        <span class="card-arrow">&rarr;</span>
+        </a>
 
-    <a href="experience.html" class="project-card">
-      <span class="card-type">composites · materials</span>
-      <h3 class="card-title">Carbon fiber surface treatment study</h3>
-      <p class="card-desc">Investigated chemical surface treatments to improve carbon fiber composite bonding strength with aramid additives. 
-        Performed composite layups, industry-standard structural tests, and SEM imaging to characterize bonding at the micro scale.</p>
-      <div class="card-tags">
-        <span class="tag">composites</span>
-        <span class="tag">SEM</span>
-        <span class="tag">surface treatment</span>
-        <span class="tag">CFRP</span>
-      </div>
-      <span class="card-arrow">&rarr;</span>
-    </a>
-  </div>
-</section>
+        <a href="projects/carbon-fiber-study.html" class="project-card">
+        <span class="card-type">composites · materials</span>
+        <h3 class="card-title">Carbon fiber surface treatment study</h3>
+        <ul class="card-bullets">
+            <li>Investigated chemical surface treatments to improve CFRP bonding with aramid additives</li>
+            <li>Performed composite layups and industry-standard structural tests</li>
+            <li>Used SEM imaging to characterize bonding at the micro scale</li>
+        </ul>
+        <div class="card-tags">
+            <span class="tag">composites</span>
+            <span class="tag">SEM</span>
+            <span class="tag">CFRP</span>
+        </div>
+        <span class="card-arrow">&rarr;</span>
+        </a>
+    </div>
+    </section>
 
     <!-- ===================== ACTIVITIES PREVIEW ===================== -->
     <section>
@@ -125,15 +134,17 @@
       </div>
 
       <div class="activities-grid">
-        <a href="activities.html" class="activity-card">
+        <a href="activities.html#powerlifting" class="activity-card">
           <span class="card-type">sport</span>
           <h3 class="activity-title">Powerlifting</h3>
           <p class="activity-desc">Competitive squat, bench, and deadlift. Meet prep, programming, and the long game of minimizing injury.</p>
+          <span class="card-arrow">&rarr;</span>
         </a>
-        <a href="activities.html" class="activity-card">
+        <a href="activities.html#hiking" class="activity-card">
           <span class="card-type">travel</span>
           <h3 class="activity-title">Hiking &amp; solo travel</h3>
           <p class="activity-desc">Great Sand Dunes, CO recently. Hiking along the Appalachians and Rocky Mountains.</p>
+          <span class="card-arrow">&rarr;</span>
         </a>
       </div>
     </section>
